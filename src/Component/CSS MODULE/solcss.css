@@ -1,0 +1,55 @@
+.sol2 {
+    background-image: url('https://rare-gallery.com/thumbs/5422392-building-skyscraper-black-and-white-vertical-perspective-wallpaper-black-wallpapers-black-background-sky-architecture-tall-square-hole-urban-hongkong-low-angle-black-amp-white-industrial-dark-.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 600px;
+    width: auto;
+    color: white;
+    text-align: center;
+    padding-top: 200px;
+}
+
+.btnh:hover {
+    color: white;
+}
+
+.sol3 {
+    background-color: lightgray;
+}
+
+.sol7 {
+    background-color: lightgray;
+    padding: 30px;
+}
+
+.blankbox {
+    height: 180px;
+    border-radius: 10px;
+    background-color: rgb(255, 253, 253);
+    width: 180px;
+    margin-left: 70px;
+}
+
+.blankimg:hover {
+    transform: scale(1.1);
+    transition: 1s;
+
+}
+
+.blankbox:hover {
+
+    border-top: 5px solid rgb(148, 147, 147);
+}
+
+.blankimg {
+    /* width: 130px;
+    height: 130px; */
+    justify-content: center;
+    text-align: center;
+    padding: 30px;
+}
+
+.blankbox2 {
+    margin-left: 300px;
+
+}

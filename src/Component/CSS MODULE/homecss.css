@@ -1,0 +1,134 @@
+.h1 {
+    background-image: url('../../accetss/home/istockphoto-1390560381-170667a1.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+    backface-visibility: hidden;
+    height: 600px;
+    width: auto;
+}
+
+.hh2 {
+    background-color: black;
+    font-size: 30px;
+    color: whitesmoke;
+    text-align: center;
+
+}
+
+.hh4 {
+    padding: 20px;
+    text-align: left;
+}
+
+.ii:hover {
+
+    transition: 1s;
+    transform: scale(1.1)
+}
+
+.ct1:hover {
+    width: 510px;
+    height: 280px;
+    border: 1px solid blue;
+    box-sizing: border-box;
+}
+
+.t1 {
+    padding-top: 50px;
+    padding-bottom: 0;
+}
+
+.tt {
+    font-weight: 600;
+
+}
+
+.h0 {
+    background-color: rgb(226, 226, 226);
+}
+
+.ull {
+    text-align: center;
+
+}
+
+.ul1,
+.ul2,
+.ul3 {
+    color: black;
+
+}
+
+.ul1:hover {
+    color: black;
+
+    background-color: white;
+}
+
+.ul2:hover {
+    color: white;
+
+    background-color: gray;
+}
+
+.ul3:hover {
+    color: white;
+
+    background-color: rgb(5, 5, 5);
+}
+
+.box1 {
+    border: solid;
+    border-width: thin;
+    background-color: white;
+
+}
+
+.hh10 {
+    background-color: rgb(216, 215, 215);
+}
+
+.card1cc {
+    background-color: rgb(216, 215, 215);
+}
+
+.cc0 {
+    background-color: rgb(56, 56, 57);
+    font-size: 30px;
+    padding: 10px;
+    color: white;
+
+}
+
+.cca {
+    background-color: rgb(39, 39, 39);
+    color: white;
+    padding: 30px;
+}
+
+.ccimg:hover {
+    transition: 1s;
+    transform: scale(0.9);
+}
+
+.portfolio {
+    background-image: url('../../accetss/home/1.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 550px;
+
+}
+
+.hh13{
+    background-color: rgb(190, 189, 189);
+    padding: 30px;
+}
+
+.atag{
+    text-decoration: none;
+    color: black;
+
+}
+.atag:hover{
+    color:blue;
+}
