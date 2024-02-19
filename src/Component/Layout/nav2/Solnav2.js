@@ -2,7 +2,7 @@ import React from 'react'
 import Navbar from '../../navbar/Navbar'
 import blankimg1 from '../../../accetss/solunav2/blank-box-icon01.webp'
 import logolast from '../../../accetss/abstract-mortgage-home-roof-with-bars-forming-arrow-9723ld.png'
-import '../../CSS MODULE/solcss.css'
+import '../../CSS MODULE/layoutcss/solcss.css'
 import { ImMail4 } from "react-icons/im";
 import { AiFillSkype } from "react-icons/ai";
 import { NavLink } from 'react-router-dom';

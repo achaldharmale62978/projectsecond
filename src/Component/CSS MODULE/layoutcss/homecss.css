@@ -1,5 +1,5 @@
 .h1 {
-    background-image: url('../../accetss/home/istockphoto-1390560381-170667a1.webp');
+    background-image: url('../../../accetss/home/istockphoto-1390560381-170667a1.webp');
     background-repeat: no-repeat;
     background-size: cover;
     backface-visibility: hidden;
@@ -112,7 +112,7 @@
 }
 
 .portfolio {
-    background-image: url('../../accetss/home/1.png');
+    background-image: url('../../../accetss/home/1.png');
     background-size: cover;
     background-repeat: no-repeat;
     height: 550px;

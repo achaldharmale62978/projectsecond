@@ -1,6 +1,6 @@
 import React from 'react'
 import Navbar from '../navbar/Navbar'
-import '../CSS MODULE/homecss.css'
+import '../CSS MODULE/layoutcss/homecss.css'
 import img1 from '../../accetss/home/ourservice-img012.webp'
 // import hi1 from '../../assetss/home/achal dd.png'
 // import hi2 from '../../assetss/home/3.png'

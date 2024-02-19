@@ -5,6 +5,7 @@ import Home from './Component/Layout/Home';
 import Solnav2 from './Component/Layout/nav2/Solnav2';
 import Login from './Component/Loginpage/Login';
 import Repage from './Component/REmodule/Repage';
+import REenqueryform from './Component/REmodule/REenqueryform';
 
 
 function App() {
@@ -28,6 +29,7 @@ function App() {
 
           {/* RE MODULE */}
           <Route path='/repage' element={<Repage/>}/>
+          <Route path='/reenqueryform' element={<REenqueryform/>}/>
           
         </Routes>
       </BrowserRouter>
