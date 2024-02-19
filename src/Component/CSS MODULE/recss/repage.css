@@ -1,11 +1,13 @@
 .re11{
     border: gray solid;
-    margin: 1%;
+    margin-top: 5%;
+    margin-left: 5%;
+   
 }
 .re1 {
     background-color: lightgray;
     text-align: left;
-    padding: 1%;
+    padding: 2%;
 }
 .re2{
     font-weight:bold;

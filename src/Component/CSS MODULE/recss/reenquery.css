@@ -1,5 +1,32 @@
 
-
+.ref1{
+    background-color: lightgray;
+}
 .ref2{
     display: flex;
+}
+.fm{
+    border: gray solid;
+}
+.inp{
+    display: flex;
+}
+.textal{
+    font-size: 20px;
+}
+.ref{
+    font-weight: bold;
+    font-size: 25px;
+    padding-top: 30px;
+}
+.bt{
+    font-size: 20px;
+
+}
+
+/* re list */
+
+.t1{
+    font-size: 20px;
+    
 }
