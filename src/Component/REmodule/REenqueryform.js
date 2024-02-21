@@ -9,7 +9,7 @@ const REenqueryform = () => {
   const {register,handleSubmit}=useForm()
 
   function savedata(data){
-    axios.post('')
+    axios.post('http://localhost:7001/reenquery',data)
     console.log(data)
 
   }

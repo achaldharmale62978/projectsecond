@@ -2,6 +2,9 @@ import React, { useEffect, useState } from 'react'
 import Repage from './Repage'
 import '../CSS MODULE/recss/reenquery.css'
 import axios from 'axios'
+import { NavLink } from 'react-router-dom'
+import { GrUpdate } from "react-icons/gr";
+import { MdDelete } from "react-icons/md";
 
 
 const RElist = () => {
@@ -10,7 +13,7 @@ const RElist = () => {
 
   async function fetchdata() {
     const result = await
-      axios.get(``)
+      axios.get(`http://localhost:7001/reenquery`)
     console.log(result.data)
     setuser(result.data)
   }
@@ -23,7 +26,7 @@ const RElist = () => {
     <>
       <div className='ref1 fontfamily'>
         <div className='ref2'>
-          <Repage />&ensp;&ensp;&ensp;
+          <Repage />&ensp;&ensp;
           <div className='ref3 offset'>
             <h3 className='ref '>RE Enquery List</h3>
             <div >
@@ -41,26 +44,30 @@ const RElist = () => {
                     <th scope="col" class="table-secondary">Gender</th>
                     <th scope="col">Update</th>
                     <th scope="col" class="table-secondary">Delete</th>
-
                   </tr>
                 </thead>
                 <tbody>
                   {
-                      user.map(obj =>  {
+                      user.map(use =>  {
                       return (
                         <>
-                          <tr key=''>
-                            <th class="table-secondary"></th>
-                            <td>{obj.fname}</td>
-                            <td class="table-secondary">{obj.lname}</td>
-                            <td>{obj.phone}</td>
-                            <td class="table-secondary">{obj.city}</td>
-                            <td>{obj.email}</td>
-                            <td class="table-secondary">{obj.add}</td>
-                            <td>{obj.bday}</td>
-                            <td class="table-secondary">{obj.gender}</td>
-                            <td>@mdo</td>
-                            <td class="table-secondary">Otto</td>
+                          <tr key={use.id}>
+                            <th class="table-secondary">{use.id}</th>
+                            <td>{use.fname}</td>
+                            <td class="table-secondary">{use.lname}</td>
+                            <td>{use.phone}</td>
+                            <td class="table-secondary">{use.city}</td>
+                            <td>{use.email}</td>
+                            <td class="table-secondary">{use.add}</td>
+                            <td>{use.bday}</td>
+                            <td class="table-secondary">{use.gender}</td>
+                            <td>
+                              <NavLink to={`/reupdate/${use.id}`} className='btt'><GrUpdate /></NavLink>
+                            </td>
+                            <td>
+                              <NavLink to={`/redelete/${use.id}`} className='btt'><MdDelete  /> </NavLink>
+                            </td>
+                           
                           </tr>
                         </>
                       )

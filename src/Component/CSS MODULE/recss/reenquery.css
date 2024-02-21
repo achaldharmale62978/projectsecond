@@ -28,5 +28,15 @@
 
 .t1{
     font-size: 20px;
-    
+}
+.btt{
+    color: black;
+}
+
+/* relogout */
+.relog{
+    padding: 10%;
+}
+.rel1,.rel2{
+    padding: 4%;
 }
