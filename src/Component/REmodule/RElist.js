@@ -30,20 +30,20 @@ const RElist = () => {
           <div className='ref3 offset'>
             <h3 className='ref '>RE Enquery List</h3>
             <div >
-              <table class="table t1 border border-secondary">
+              <table className="table t1 border border-secondary">
                 <thead>
                   <tr>
-                    <th scope="col" class="table-secondary">Id</th>
+                    <th scope="col" className="table-secondary">Id</th>
                     <th scope="col">First Name</th>
-                    <th scope="col" class="table-secondary">Last Name</th>
+                    <th scope="col" className="table-secondary">Last Name</th>
                     <th scope="col">Phone No.</th>
-                    <th scope="col" class="table-secondary">City</th>
+                    <th scope="col" className="table-secondary">City</th>
                     <th scope="col">Email</th>
-                    <th scope="col" class="table-secondary">Address</th>
+                    <th scope="col" className="table-secondary">Address</th>
                     <th scope="col">Birth Date</th>
-                    <th scope="col" class="table-secondary">Gender</th>
+                    <th scope="col" className="table-secondary">Gender</th>
                     <th scope="col">Update</th>
-                    <th scope="col" class="table-secondary">Delete</th>
+                    <th scope="col" className="table-secondary">Delete</th>
                   </tr>
                 </thead>
                 <tbody>
@@ -52,15 +52,15 @@ const RElist = () => {
                       return (
                         <>
                           <tr key={use.id}>
-                            <th class="table-secondary">{use.id}</th>
+                            <th className="table-secondary">{use.id}</th>
                             <td>{use.fname}</td>
-                            <td class="table-secondary">{use.lname}</td>
+                            <td className="table-secondary">{use.lname}</td>
                             <td>{use.phone}</td>
-                            <td class="table-secondary">{use.city}</td>
+                            <td className="table-secondary">{use.city}</td>
                             <td>{use.email}</td>
-                            <td class="table-secondary">{use.add}</td>
+                            <td className="table-secondary">{use.add}</td>
                             <td>{use.bday}</td>
-                            <td class="table-secondary">{use.gender}</td>
+                            <td className="table-secondary">{use.gender}</td>
                             <td>
                               <NavLink to={`/reupdate/${use.id}`} className='btt'><GrUpdate /></NavLink>
                             </td>
