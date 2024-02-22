@@ -8,9 +8,9 @@ import { useNavigate, useParams } from 'react-router-dom'
 
 const REupdate = () => {
 
-  const {userId }=useParams()
+  const { userId } = useParams()
 
-  const navigate=useNavigate()
+  const navigate = useNavigate()
 
   const { register, handleSubmit, setValue } = useForm()
 
@@ -18,25 +18,27 @@ const REupdate = () => {
     const result = await
       axios.get(`http://localhost:7001/reenquery/get/${userId}`)
 
-    setValue('fname',result.data.fname),
-    setValue('lname',result.data.lname),
-    setValue('phone',result.data.phone),
-    setValue('city',result.data.city),
-    setValue('email',result.data.email),
-    setValue('add',result.data.add),
-    setValue('add',result.data.bday),
-    setValue('gender',result.data.gender)
+    result.data = result.data[0]
+    
+    setValue('fname', result.data.fname);
+    setValue('lname', result.data.lname);
+    setValue('phone', result.data.phone);
+    setValue('city', result.data.city);
+    setValue('email', result.data.email);
+    setValue('add', result.data.add);
+    setValue('bday', result.data.bday);
+    setValue('gender', result.data.gender);
 
   }
   useEffect(() => {
     fetchdata()
-  }, [])
+  },[])
 
   function savedata(data) {
-    axios.put(`http://localhost:7001/reenquery/reupdate/${userId}`,data)
+    axios.put(`http://localhost:7001/reenquery/reupdate/${userId}`, data)
     console.log(data)
-    alert('re updatet///')
-    navigate('relist')
+    alert('re updatet......')
+    navigate('/relist')
   }
   return (
     <>

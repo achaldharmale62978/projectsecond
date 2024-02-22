@@ -1,7 +1,8 @@
 
 .ref1{
     background-color: lightgray;
-}
+    padding: 1%;
+} 
 .ref2{
     display: flex;
 }
@@ -39,4 +40,33 @@
 }
 .rel1,.rel2{
     padding: 4%;
+}
+/* cibil */
+
+.cl1{
+    display: flex;
+
+}
+.cl2{
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.ref5{
+    padding-left: 60px;
+    padding-right: 60px;
+}
+.ree{
+    padding: 1%;
+}
+
+/* registration */
+
+.refmain{
+    border: gray solid;
+    padding-right: 8%;
+}
+.displays{
+    display: flex;
+    padding: 2%;
 }

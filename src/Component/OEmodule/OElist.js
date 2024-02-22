@@ -22,11 +22,11 @@ const OElist = () => {
 
     return (
         <>
-            <div className='ref1 fontfamily'>
+            <div className='ref1 fontfamily'><br/><br/>
                 <div className='ref2'>
                     <Oepage /> &ensp;&ensp;&ensp;&ensp;&ensp;
                     <div className='ref3 '>
-                        <h3 className='ref'>Oprational Exicutive List</h3>
+                        <h3 className='ref'>Oprational Exicutive List</h3><br/><br/>
                         <div>
                             <table class="table t1 border border-secondary">
                                 <thead>
@@ -60,7 +60,7 @@ const OElist = () => {
                                                         <td>{use.bday}</td>
                                                         <td class="table-secondary">{use.gender}</td>
                                                         <td>
-                                                            <NavLink to={`/cibil`}>
+                                                            <NavLink to={`/cibilreg`}>
                                                                 <button className='btn btn-outline-danger ' type='submit' >Cibil</button>
                                                             </NavLink>
                                                         </td>

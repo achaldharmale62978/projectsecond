@@ -6,11 +6,12 @@ import axios from 'axios'
 
 const REenqueryform = () => {
 
-  const {register,handleSubmit}=useForm()
+  const { register, handleSubmit } = useForm()
 
-  function savedata(data){
-    axios.post('http://localhost:7001/reenquery',data)
+  function savedata(data) {
+    axios.post('http://localhost:7001/reenquery', data)
     console.log(data)
+    alert('data addedd successfully...')
 
   }
   return (
@@ -21,12 +22,12 @@ const REenqueryform = () => {
           <div className='ref3  col-6'>
             <h4 className='ref offset-2'>RE Enquery Form : </h4><br />
             <form className='' onSubmit={handleSubmit(savedata)}>
-              <div className='fm offset-2'><br/>
+              <div className='fm offset-2'><br />
 
                 <div className='inp '>
                   <div className='form-group textal col-5 offset-1 '>
                     <label htmlFor='fname '>First Name :</label>
-                    <input id='fname' type='text' className='form-control' {...register('fname')}/>
+                    <input id='fname' type='text' className='form-control' {...register('fname')} />
                   </div>&ensp;&ensp;&ensp;
                   <div className='form-group textal col-5'>
                     <label htmlFor='lname'>Last Name :</label>
@@ -41,14 +42,14 @@ const REenqueryform = () => {
                   </div>&ensp;&ensp;&ensp;
                   <div className='form-group textal col-5'>
                     <label htmlFor='city'>City :</label>
-                    <input id='city' type='text' className='form-control'  {...register('city')}/>
+                    <input id='city' type='text' className='form-control'  {...register('city')} />
                   </div>
                 </div><br />
 
                 <div className='inp '>
                   <div className='form-group textal col-5 offset-1'>
                     <label htmlFor='email'>Email :</label>
-                    <input id='email' type='text' className='form-control'  {...register('email')}/>
+                    <input id='email' type='text' className='form-control'  {...register('email')} />
                   </div>&ensp;&ensp;&ensp;
                   <div className='form-group textal col-5'>
                     <label htmlFor='add'>Address : </label>
@@ -59,30 +60,30 @@ const REenqueryform = () => {
                 <div className='inp '>
                   <div className='form-group textal col-5 offset-1'>
                     <label htmlFor='bday'>Birth Date : </label>
-                    <input id='bday' type='date' className='form-control'  {...register('bday')}/>
+                    <input id='bday' type='date' className='form-control'  {...register('bday')} />
                   </div>&ensp;&ensp;&ensp;
                   <div className='form-group textal col-5'>
-                    <label htmlFor='gender'>Gender : </label><br/>
+                    <label htmlFor='gender'>Gender : </label><br />
 
                     <div className='form-check form-check-inline'>
-                      <input id='inlineRadio1' type='radio' name='inlineRadioOptions' value='female' className='form-control form-check-input '  {...register('gender')}/>
+                      <input id='inlineRadio1' type='radio' name='inlineRadioOptions' value='female' className='form-control form-check-input '  {...register('gender')} />
                       <label htmlFor='inlineRadio1' className='form-check-label'> : Female </label>
                     </div>
                     <div className='form-check form-check-inline'>
-                      <input id='inlineRadio2' type='radio' name='inlineRadioOptions' value='male' className='form-control form-check-input'  {...register('gender')}/>
+                      <input id='inlineRadio2' type='radio' name='inlineRadioOptions' value='male' className='form-control form-check-input'  {...register('gender')} />
                       <label htmlFor='inlineRadio2' className='form-check-label'> : Male  </label>
                     </div>
                   </div>
-                </div><br /><br/>
+                </div><br /><br />
 
                 <div className='inpb '>
-                 <button type='submit' className='btn btn-outline-secondary bt col-5 offset-1'>Submit</button>
-                 &ensp;&ensp;&ensp;
+                  <button type='submit' className='btn btn-outline-secondary bt col-5 offset-1'>Submit</button>
+                  &ensp;&ensp;&ensp;
                   <button type='reset' className='btn btn-outline-danger bt col-5'>Reset</button>
-                </div><br/>
+                </div><br />
 
               </div>
-              <br/>
+              <br />
             </form>
           </div>
         </div>

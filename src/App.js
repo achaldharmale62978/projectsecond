@@ -15,6 +15,12 @@ import Cmpage from './Component/CMmodule/Cmpage';
 import Cmlist from './Component/CMmodule/Cmlist';
 import Cmlogout from './Component/CMmodule/Cmlogout';
 import REupdate from './Component/REmodule/REupdate';
+import REdelete from './Component/REmodule/REdelete';
+import Cibil from './Component/OEmodule/Cibil';
+import CibilStatus from './Component/REmodule/CibilStatus';
+import CibilDelete from './Component/OEmodule/CibilDelete';
+import Registration from './Component/REmodule/Registration';
+
 
 
 function App() {
@@ -42,16 +48,26 @@ function App() {
           <Route path='/relist' element={<RElist/>}/>
           <Route path='/reupdate/:userId' element={<REupdate/>}/>
           <Route path='/relogout' element={<RElogout/>}/>
+          <Route path='/redelete/:userId' element={<REdelete/>}/>
+
+          <Route path='/cibilstatus' element={<CibilStatus/>}/>
+          <Route path='/cibildelete/:cibilId' element={<CibilDelete/>}/>
+
+          <Route path='/registration' element={<Registration/>}/>
 
           {/* OE MODULE */}
           <Route path='/oepage' element={<Oepage/>}/>
           <Route path='/oelist' element={<OElist/>}/>
           <Route path='/oelogout' element={<Oelogout/>}/>
+          <Route path='/cibilreg' element={<Cibil/>}/>
+         
 
           {/* CM MODULE */}
           <Route path='/cmpage' element={<Cmpage/>}/>
           <Route path='/cmlist' element={<Cmlist/>}/>
           <Route path='/cmlogout' element={<Cmlogout/>}/>
+
+          
           
         </Routes>
       </BrowserRouter>
