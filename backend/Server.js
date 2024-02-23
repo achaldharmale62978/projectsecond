@@ -6,7 +6,6 @@ const app = express()
 const cors = require('cors')
 const e = require('express')
 
-
 app.use(cors())
 app.use(express.json())
 
@@ -185,40 +184,95 @@ connection.connect((error) => {
         })
 
         // registration
-        app.get('/registration',(req,res)=>{
-             const q ='SELECT * FROM registration '
+        app.get('/registration', (req, res) => {
+            const q = 'SELECT * FROM registration '
 
-             connection.query(q , (error,data)=>{
+            connection.query(q, (error, data) => {
+                if (error) {
+                    console.log(error)
+                    return res.status(500).send(error)
+                }
+                return res.json(data)
+            })
+        })
+        app.post('/registration', (req, res) => {
+            const q = 'INSERT INTO registration ( `rid` , `bfname`  , `blname`  , `bbdate`  , `bphnum`  , `bemail`  , `badd`  , `bgender`   ) VALUE ( ? , ? , ? , ? , ? , ? , ? , ?  )'
+
+            const value = [
+                req.body.rid,
+                req.body.bfname,
+                req.body.blname,
+                req.body.bbdate,
+                req.body.bphnum,
+                req.body.bemail,
+                req.body.badd,
+                req.body.bgender
+            ]
+
+            connection.query(q, value, (error, data) => {
+                if (error) {
+                    console.log(error)
+                    return res.status(500).send(error)
+                }
+                return res.json(data)
+            })
+        })
+
+        app.get('/registration/get/:rid', (req, res) => {
+            const regId = req.params.rid;
+
+            const q = 'SELECT * FROM  registration WHERE rid=? '
+
+            connection.query(q, [regId], (error, data) => {
+
+                if (error) {
+                    console.log(error)
+                    return res.status(500).send(error)
+                }
+                return res.json(data)
+            })
+        })
+
+        app.put('/registration/regupdate/:rid', (req, res) => {
+
+            const regId = req.params.rid;
+
+            const q = 'UPDATE registration set `rid`=? , `bfname`=? ,`blname`=? ,`bbdate`=? ,`bphnum`=? ,`bemail`=? ,`badd`=? ,`bgender`=?  WHERE rid=? '
+
+            const value=[
+                req.body.rid,
+                req.body.bfname,
+                req.body.blname,
+                req.body.bbdate,
+                req.body.bphnum,
+                req.body.bemail,
+                req.body.badd,
+                req.body.bgender,
+                regId
+            ]
+
+            connection.query(q,value,(error,data)=>{
                 if(error){
                     console.log(error)
                     return res.status(500).send(error)
                 }
                 return res.json(data)
-             })
-        })
-        app.post('/registration',(req,res)=>{
-            const q = 'INSERT INTO registration ( `rid` , `bfname`  , `blname`  , `bbdate`  , `bphnum`  , `bemail`  , `badd`  , `bgender`   ) VALUE ( ? , ? , ? , ? , ? , ? , ? , ?  )'
-
-                const value=[
-                    req.body.rid,
-                    req.body.bfname,
-                    req.body.blname,
-                    req.body.bbdate,
-                    req.body.bphnum,
-                    req.body.bemail,
-                    req.body.badd,
-                    req.body.bgender
-                ]
-
-                connection.query(q,value,(error,data)=>{
-                    if(error){
-                        console.log(error)
-                        return res.status(500).send(error)
-                    }
-                    return res.json(data)
-                })
+            })
         })
 
+        app.delete('/registration/regdelete/:rid',(req,res)=>{
+            const regId = req.params.rid;
+
+            const q = 'DELETE from registration   WHERE rid=?'
+
+            connection.query(q , [regId], (error,data)=>{
+                if(error){
+                    console.log(error)
+                    return res.status(500).send(error)
+                }
+                return res.json(data)
+            })
+        })
 
     }
 })

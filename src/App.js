@@ -20,6 +20,8 @@ import Cibil from './Component/OEmodule/Cibil';
 import CibilStatus from './Component/REmodule/CibilStatus';
 import CibilDelete from './Component/OEmodule/CibilDelete';
 import Registration from './Component/REmodule/Registration';
+import REgupdate from './Component/REmodule/REgupdate';
+import REgdelete from './Component/REmodule/REgdelete';
 
 
 
@@ -54,6 +56,8 @@ function App() {
           <Route path='/cibildelete/:cibilId' element={<CibilDelete/>}/>
 
           <Route path='/register' element={<Registration/>}/>
+          <Route path='/regupdate/:regId' element={<REgupdate/>}/>
+          <Route path='/regdelete/:regId' element={<REgdelete/>}/>
 
           {/* OE MODULE */}
           <Route path='/oepage' element={<Oepage/>}/>

@@ -8,12 +8,12 @@ import { MdDelete } from "react-icons/md";
 
 const Cmlist = () => {
 
-  const [user, setuser] = useState([])
+  const [reg, setreg] = useState([])
 
   async function fetchdata() {
     const result = await
       axios.get(`http://localhost:7001/registration`)
-    setuser(result.data)
+    setreg(result.data)
   }
 
   useEffect(() => {
@@ -46,23 +46,23 @@ const Cmlist = () => {
                 </thead>
                 <tbody>
                   {
-                    user.map(use => {
+                    reg.map(usee => {
                       return (
                         <>
-                          <tr>
-                            <th class="table-secondary">{use.rid}</th>
-                            <td>{use.bfname}</td>
-                            <td class="table-secondary">{use.blname}</td>
-                            <td>{use.bbdate}</td>
-                            <td class="table-secondary">{use.bphnum}</td>
-                            <td>{use.bemail}</td>
-                            <td class="table-secondary">{use.badd}</td>
-                            <td>{use.bgender}</td>
+                          <tr key={usee.rid}>
+                            <th class="table-secondary">{usee.rid}</th>
+                            <td>{usee.bfname}</td>
+                            <td class="table-secondary">{usee.blname}</td>
+                            <td>{usee.bbdate}</td>
+                            <td class="table-secondary">{usee.bphnum}</td>
+                            <td>{usee.bemail}</td>
+                            <td class="table-secondary">{usee.badd}</td>
+                            <td>{usee.bgender}</td>
                             <td class="table-secondary">
-                              <NavLink to={'/regupdate'} className='btt'><GrUpdate /></NavLink>
+                              <NavLink to={`/regupdate/${usee.rid}`} className='btt'><GrUpdate /></NavLink>
                             </td>
                             <td>
-                              <NavLink to={'/regdelete'} className='btt'><MdDelete /></NavLink>
+                              <NavLink to={`/regdelete/${usee.rid}`} className='btt'><MdDelete /></NavLink>
                             </td>
 
                           </tr>
