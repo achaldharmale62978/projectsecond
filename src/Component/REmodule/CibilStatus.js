@@ -59,7 +59,7 @@ const CibilStatus = () => {
                                                             <td>{cibils.status}</td>
                                                             <td class="table-secondary">{cibils.remark}</td>
                                                             <td >
-                                                                <NavLink to={`/registration`} className='btn btn-outline-secondary btt fontfamily'>Registration</NavLink>
+                                                                <NavLink to={`/register`} className='btn btn-outline-secondary btt fontfamily'>Registration</NavLink>
                                                             </td>
                                                             <td class="table-secondary">
                                                                 <NavLink to={`/cibildelete/${cibils.cid}`} className='btt'>< MdDelete /></NavLink>

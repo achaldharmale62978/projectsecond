@@ -53,7 +53,7 @@ function App() {
           <Route path='/cibilstatus' element={<CibilStatus/>}/>
           <Route path='/cibildelete/:cibilId' element={<CibilDelete/>}/>
 
-          <Route path='/registration' element={<Registration/>}/>
+          <Route path='/register' element={<Registration/>}/>
 
           {/* OE MODULE */}
           <Route path='/oepage' element={<Oepage/>}/>

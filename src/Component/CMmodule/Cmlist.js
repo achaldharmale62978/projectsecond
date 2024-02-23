@@ -2,6 +2,9 @@ import React, { useEffect, useState } from 'react'
 import Cmpage from './Cmpage'
 import axios from 'axios'
 import '../CSS MODULE/recss/reenquery.css'
+import { NavLink } from 'react-router-dom'
+import { GrUpdate } from 'react-icons/gr'
+import { MdDelete } from "react-icons/md";
 
 const Cmlist = () => {
 
@@ -9,7 +12,7 @@ const Cmlist = () => {
 
   async function fetchdata() {
     const result = await
-      axios.get(`http://localhost:7001/reenquery`)
+      axios.get(`http://localhost:7001/registration`)
     setuser(result.data)
   }
 
@@ -28,15 +31,16 @@ const Cmlist = () => {
               <table class="table t1 table-border">
                 <thead>
                   <tr>
-                    <th scope="col" class="table-secondary">Id</th>
+                    <th scope="col" class="table-secondary">Rid</th>
                     <th scope="col">First Name</th>
                     <th scope="col" class="table-secondary">Last Name</th>
-                    <th scope="col">Phone No.</th>
-                    <th scope="col" class="table-secondary">City</th>
+                    <th scope="col">Birth  Date</th>
+                    <th scope="col" class="table-secondary">Phone No.</th>
                     <th scope="col">Email</th>
                     <th scope="col" class="table-secondary">Address</th>
-                    <th scope="col">Birth Date</th>
-                    <th scope="col" class="table-secondary">Gender</th>
+                    <th scope="col">Gender</th>
+                    <th scope="col" class="table-secondary">Update</th>
+                    <th scope="col">Delete</th>
 
                   </tr>
                 </thead>
@@ -46,15 +50,20 @@ const Cmlist = () => {
                       return (
                         <>
                           <tr>
-                            <th class="table-secondary">{use.id}</th>
-                            <td>{use.fname}</td>
-                            <td class="table-secondary">{use.lname}</td>
-                            <td>{use.phone}</td>
-                            <td class="table-secondary">{use.city}</td>
-                            <td>{use.email}</td>
-                            <td class="table-secondary">{use.add}</td>
-                            <td>{use.bday}</td>
-                            <td class="table-secondary">{use.gender}</td>
+                            <th class="table-secondary">{use.rid}</th>
+                            <td>{use.bfname}</td>
+                            <td class="table-secondary">{use.blname}</td>
+                            <td>{use.bbdate}</td>
+                            <td class="table-secondary">{use.bphnum}</td>
+                            <td>{use.bemail}</td>
+                            <td class="table-secondary">{use.badd}</td>
+                            <td>{use.bgender}</td>
+                            <td class="table-secondary">
+                              <NavLink to={'/regupdate'} className='btt'><GrUpdate /></NavLink>
+                            </td>
+                            <td>
+                              <NavLink to={'/regdelete'} className='btt'><MdDelete /></NavLink>
+                            </td>
 
                           </tr>
                         </>
