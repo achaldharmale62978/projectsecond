@@ -196,7 +196,7 @@ connection.connect((error) => {
             })
         })
         app.post('/registration', (req, res) => {
-            const q = 'INSERT INTO registration ( `rid` , `bfname`  , `blname`  , `bbdate`  , `bphnum`  , `bemail`  , `badd`  , `bgender`   ) VALUE ( ? , ? , ? , ? , ? , ? , ? , ?  )'
+            const q = 'INSERT INTO registration ( `rid` , `bfname`  , `blname`  , `bbdate`  , `bphnum`  , `bemail`  , `badd`  , `bgender` , `phnum`  , `psnum`  , `paname`  , `pdname`  , `pzip`  , `pstatus`  , `pcity`   , `lhnum`  , `lsnum`  , `laname`  , `ldname`  , `lzip`  , `lstatus`  , `lcity`   , `ltype`  , `lamount`  , `teanure`  , `pamount`  , `reamount`  , `lastatus`  , `laremark`   , `atype`  , `abalance`  , `ahname`  , `astatus`  , `anum`  ) VALUE ( ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ?  )'
 
             const value = [
                 req.body.rid,
@@ -206,7 +206,37 @@ connection.connect((error) => {
                 req.body.bphnum,
                 req.body.bemail,
                 req.body.badd,
-                req.body.bgender
+                req.body.bgender,
+
+                req.body.phnum,
+                req.body.psnum,
+                req.body.paname,
+                req.body.pdname,
+                req.body.pzip,
+                req.body.pstatus,
+                req.body.pcity,
+
+                req.body.lhnum,
+                req.body.lsnum,
+                req.body.laname,
+                req.body.ldname,
+                req.body.lzip,
+                req.body.lstatus,
+                req.body.lcity,
+
+                req.body.ltype,
+                req.body.lamount,
+                req.body.teanure,
+                req.body.pamount,
+                req.body.reamount,
+                req.body.lastatus,
+                req.body.laremark,
+
+                req.body.atype,
+                req.body.abalance,
+                req.body.ahname,
+                req.body.astatus,
+                req.body.anum
             ]
 
             connection.query(q, value, (error, data) => {
@@ -237,9 +267,9 @@ connection.connect((error) => {
 
             const regId = req.params.rid;
 
-            const q = 'UPDATE registration set `rid`=? , `bfname`=? ,`blname`=? ,`bbdate`=? ,`bphnum`=? ,`bemail`=? ,`badd`=? ,`bgender`=?  WHERE rid=? '
+            const q = 'UPDATE registration set `rid`=? , `bfname`=? ,`blname`=? ,`bbdate`=? ,`bphnum`=? ,`bemail`=? ,`badd`=? ,`bgender`=?  , `phnum`=? ,`psnum`=? ,`paname`=? ,`pdname`=? ,`pzip`=? ,`pstatus`=? ,`pcity`=?  , `lhnum`=? ,`lsnum`=? ,`laname`=? ,`ldname`=? ,`lzip`=? ,`lstatus`=? ,`lcity`=?  , `ltype`=? ,`lamount`=? ,`teanure`=? ,`pamount`=? ,`reamount`=? ,`lastatus`=? ,`laremark`=?  , `atype`=? ,`abalance`=? ,`ahname`=? ,`astatus`=? ,`anum`=?   WHERE rid=? '
 
-            const value=[
+            const value = [
                 req.body.rid,
                 req.body.bfname,
                 req.body.blname,
@@ -248,11 +278,42 @@ connection.connect((error) => {
                 req.body.bemail,
                 req.body.badd,
                 req.body.bgender,
+
+                req.body.phnum,
+                req.body.psnum,
+                req.body.paname,
+                req.body.pdname,
+                req.body.pzip,
+                req.body.pstatus,
+                req.body.pcity,
+
+                req.body.lhnum,
+                req.body.lsnum,
+                req.body.laname,
+                req.body.ldname,
+                req.body.lzip,
+                req.body.lstatus,
+                req.body.lcity,
+
+                req.body.ltype,
+                req.body.lamount,
+                req.body.teanure,
+                req.body.pamount,
+                req.body.reamount,
+                req.body.lastatus,
+                req.body.laremark,
+
+                req.body.atype,
+                req.body.abalance,
+                req.body.ahname,
+                req.body.astatus,
+                req.body.anum,
+
                 regId
             ]
 
-            connection.query(q,value,(error,data)=>{
-                if(error){
+            connection.query(q, value, (error, data) => {
+                if (error) {
                     console.log(error)
                     return res.status(500).send(error)
                 }
@@ -260,13 +321,13 @@ connection.connect((error) => {
             })
         })
 
-        app.delete('/registration/regdelete/:rid',(req,res)=>{
+        app.delete('/registration/regdelete/:rid', (req, res) => {
             const regId = req.params.rid;
 
             const q = 'DELETE from registration   WHERE rid=?'
 
-            connection.query(q , [regId], (error,data)=>{
-                if(error){
+            connection.query(q, [regId], (error, data) => {
+                if (error) {
                     console.log(error)
                     return res.status(500).send(error)
                 }

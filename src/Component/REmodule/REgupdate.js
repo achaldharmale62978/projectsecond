@@ -25,7 +25,38 @@ const REgupdate = () => {
         setValue('bphnum',result.data.bphnum);
         setValue('bemail',result.data.bemail);
         setValue('badd',result.data.badd);
-        setValue('bgender',result.data.bgender)
+        setValue('bgender',result.data.bgender);
+
+        setValue('phnum',result.data.phnum);
+        setValue('psnum',result.data.psnum);
+        setValue('paname',result.data.paname);
+        setValue('pdname',result.data.pdname);
+        setValue('pzip',result.data.pzip);
+        setValue('pstatus',result.data.pstatus);
+        setValue('pcity',result.data.pcity);
+
+        setValue('lhnum',result.data.lhnum);
+        setValue('lsnum',result.data.lsnum);
+        setValue('laname',result.data.laname);
+        setValue('ldname',result.data.ldname);
+        setValue('lzip',result.data.lzip);
+        setValue('lstatus',result.data.lstatus);
+        setValue('lcity',result.data.lcity);
+
+        setValue('ltype',result.data.ltype);
+        setValue('lamount',result.data.lamount);
+        setValue('teanure',result.data.teanure);
+        setValue('pamount',result.data.pamount);
+        setValue('reamount',result.data.reamount);
+        setValue('lastatus',result.data.lastatus);
+        setValue('laremark',result.data.laremark);
+
+        setValue('atype',result.data.atype);
+        setValue('abalance',result.data.abalance);
+        setValue('ahname',result.data.ahname);
+        setValue('astatus',result.data.astatus);
+        setValue('anum',result.data.anum);
+        
     }
 
     useEffect(()=>{

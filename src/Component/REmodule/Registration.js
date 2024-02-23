@@ -1,9 +1,9 @@
 import React from 'react'
-import Oepage from '../OEmodule/Oepage'
 import '../CSS MODULE/recss/reenquery.css'
 import { useForm } from 'react-hook-form'
 import { useNavigate } from 'react-router-dom'
 import axios from 'axios'
+import Repage from './Repage'
 
 const Registration = () => {
 
@@ -21,7 +21,7 @@ const Registration = () => {
         <>
             <div className='ref1 fontfamily'>
                 <div className='ref2'>
-                    <Oepage />
+                    <Repage />
                     <div className='ref3'>
                         <div>
                             <h5 className='ref text-center'>Registration Form</h5><hr />
@@ -210,7 +210,7 @@ const Registration = () => {
                                         </div>
 
                                         <div className='form-group offset-1 textal'>
-                                            <label htmlFor='lareamrk'  >City</label>
+                                            <label htmlFor='lareamrk'  >Remark</label>
                                             <input type='text' id='laremark' className='form-control' {...register('laremark')} />
                                         </div>
                                     </div>
