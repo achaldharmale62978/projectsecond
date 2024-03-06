@@ -64,7 +64,7 @@ const RElist = () => {
                             <td>
                               <NavLink to={`/reupdate/${use.id}`} className='btt'><GrUpdate /></NavLink>
                             </td>
-                            <td>
+                            <td className='table-secondary'>
                               <NavLink to={`/redelete/${use.id}`} className='btt'><MdDelete  /> </NavLink>
                             </td>
                            

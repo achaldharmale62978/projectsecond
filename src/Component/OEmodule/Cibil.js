@@ -28,7 +28,7 @@ const Cibil = () => {
                     <div className='fm col-6 ref5'>
                         <div className='ref3 fontfamily   ' >
                             <div className='text-center  '>
-                                <h5 className='ref '> * Update Cibil *</h5>
+                                <h5 className='ref '> * Update Cibil *</h5><hr/>
                             </div><br />
                             <form onSubmit={handleSubmit(savedata)}>
                                 <div className='form-group   cl1'>

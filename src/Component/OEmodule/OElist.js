@@ -26,7 +26,7 @@ const OElist = () => {
                 <div className='ref2'>
                     <Oepage /> &ensp;&ensp;&ensp;&ensp;&ensp;
                     <div className='ref3 '>
-                        <h3 className='ref'>Oprational Exicutive List</h3><br/><br/>
+                        <h3 className='ref'>* &ensp;&ensp;Oprational Exicutive List &ensp;&ensp;*</h3><hr></hr><br/><br/>
                         <div>
                             <table class="table t1 border border-secondary">
                                 <thead>

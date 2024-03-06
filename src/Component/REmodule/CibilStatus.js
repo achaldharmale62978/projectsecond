@@ -5,6 +5,7 @@ import { NavLink } from 'react-router-dom'
 import { GrUpdate } from "react-icons/gr";
 import { MdDelete } from "react-icons/md";
 import Oepage from '../OEmodule/Oepage'
+import Repage from './Repage';
 
 
 const CibilStatus = () => {
@@ -26,7 +27,7 @@ const CibilStatus = () => {
         <>
             <div className='ref1 fontfamily '>
                 <div className='ref2'>
-                    <Oepage />&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;
+                    <Repage />&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;
                     <div className='ref6'>
                         <div className=' ref3'>
                             <div className=' text-center  '>

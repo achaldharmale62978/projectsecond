@@ -19,7 +19,7 @@ const Cmlogout = () => {
                         <h5 class="card-header text-center">Credit Manager</h5>
                         <div class="card-body text-center">
                             <blockquote class="blockquote mb-0">
-                                <h5>A well-known quote, contained in a blockquote element.</h5><br />
+                                <h5>Are you want to leave this page</h5><br />
                                 <NavLink to={'/login'}>
                                     <button className='btn btn-outline-secondary col-3' type='submit'>Log Out</button>
                                 </NavLink>

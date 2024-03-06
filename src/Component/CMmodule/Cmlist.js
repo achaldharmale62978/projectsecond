@@ -25,7 +25,7 @@ const Cmlist = () => {
         <div className='ref2'>
           <Cmpage />&ensp;&ensp;&ensp;&ensp;&ensp;
           <div className='ref3'>
-            <h3 className='ref'>Credit Manager List</h3><hr />
+            <h3 className='ref'>*  Credit Manager List  *</h3><hr />
 
             <div>
               <h6 className='ref'>Basic Information : </h6>

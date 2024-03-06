@@ -26,52 +26,52 @@ const REenqueryform = () => {
 
                 <div className='inp '>
                   <div className='form-group textal col-5 offset-1 '>
-                    <label htmlFor='fname '>First Name :</label>
+                    <label htmlFor='fname ' className='form-label'>First Name :</label>
                     <input id='fname' type='text' className='form-control' {...register('fname')} />
                   </div>&ensp;&ensp;&ensp;
                   <div className='form-group textal col-5'>
-                    <label htmlFor='lname'>Last Name :</label>
+                    <label htmlFor='lname' className='form-label'>Last Name :</label>
                     <input id='lname' type='text' className='form-control' {...register('lname')} />
                   </div>
                 </div><br />
 
                 <div className='inp '>
                   <div className='form-group textal col-5 offset-1 '>
-                    <label htmlFor='phone '>Phone No. :</label>
+                    <label htmlFor='phone ' className='form-label'>Phone No. :</label>
                     <input id='phone' type='number' className='form-control' {...register('phone')} />
                   </div>&ensp;&ensp;&ensp;
                   <div className='form-group textal col-5'>
-                    <label htmlFor='city'>City :</label>
+                    <label htmlFor='city' className='form-label'>City :</label>
                     <input id='city' type='text' className='form-control'  {...register('city')} />
                   </div>
                 </div><br />
 
                 <div className='inp '>
                   <div className='form-group textal col-5 offset-1'>
-                    <label htmlFor='email'>Email :</label>
+                    <label htmlFor='email' className='form-label'>Email :</label>
                     <input id='email' type='text' className='form-control'  {...register('email')} />
                   </div>&ensp;&ensp;&ensp;
                   <div className='form-group textal col-5'>
-                    <label htmlFor='add'>Address : </label>
+                    <label htmlFor='add' className='form-label'>Address : </label>
                     <textarea className='form-control' id='add' {...register('add')} />
                   </div>
                 </div><br />
 
                 <div className='inp '>
                   <div className='form-group textal col-5 offset-1'>
-                    <label htmlFor='bday'>Birth Date : </label>
+                    <label htmlFor='bday' className='form-label'>Birth Date : </label>
                     <input id='bday' type='date' className='form-control'  {...register('bday')} />
                   </div>&ensp;&ensp;&ensp;
                   <div className='form-group textal col-5'>
-                    <label htmlFor='gender'>Gender : </label><br />
+                    <label htmlFor='gender' className='form-label'>Gender : </label><br />
 
                     <div className='form-check form-check-inline'>
                       <input id='inlineRadio1' type='radio' name='inlineRadioOptions' value='female' className='form-control form-check-input '  {...register('gender')} />
-                      <label htmlFor='inlineRadio1' className='form-check-label'> : Female </label>
+                      <label htmlFor='inlineRadio1' className='form-check-label form-label'> : Female </label>
                     </div>
                     <div className='form-check form-check-inline'>
                       <input id='inlineRadio2' type='radio' name='inlineRadioOptions' value='male' className='form-control form-check-input'  {...register('gender')} />
-                      <label htmlFor='inlineRadio2' className='form-check-label'> : Male  </label>
+                      <label htmlFor='inlineRadio2' className='form-check-label form-label'> : Male  </label>
                     </div>
                   </div>
                 </div><br /><br />

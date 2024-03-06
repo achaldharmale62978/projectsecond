@@ -1,72 +1,135 @@
-
-.ref1{
+.ref1 {
     background-color: lightgray;
     padding: 1%;
-} 
-.ref2{
+}
+
+.ref2 {
     display: flex;
 }
-.fm{
+
+.fm {
     border: gray solid;
 }
-.inp{
+
+.inp {
     display: flex;
 }
-.textal{
+
+.textal {
     font-size: 20px;
 }
-.ref{
+
+.ref {
     font-weight: bold;
     font-size: 25px;
     padding-top: 30px;
 }
-.bt{
+
+.bt {
     font-size: 20px;
 
 }
+
+/* 
+section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    flex-flow: column;
+}
+.form-group{
+    position: relative;
+    margin: 12px 0;
+}
+.form-group input{
+ padding: 8px 10px;
+ font-size: 18px;
+ border-radius: 5px;
+ border: #acacac solid 2px;
+ color: #eee;
+ transition: 0.15s all ease;
+
+
+}
+
+.form-group input:focus{
+    border-color: #eee;
+}
+.form-group input::placeholder{
+    color: transparent;
+}
+
+
+.form-group.form-label{
+position: absolute;
+top: 9px;
+left: 0;
+font-size: 18px;
+color: #acacac;
+pointer-events: none;
+transition: 0.15s all ease;
+
+}
+.form-group input:focus + .form-label,
+.form-group input:not(:placeholder-shown),
+.form-label{
+    transform: translate(5px, -22px);
+    background-color: rgb(173, 163, 163);
+    font-size: 14px;
+    color: #040404;
+} */
 
 /* re list */
 
-.t1{
+.t1 {
     font-size: 20px;
 }
-.btt{
+
+.btt {
     color: black;
 }
 
 /* relogout */
-.relog{
+.relog {
     padding: 10%;
 }
-.rel1,.rel2{
+
+.rel1,
+.rel2 {
     padding: 4%;
 }
+
 /* cibil */
 
-.cl1{
+.cl1 {
     display: flex;
 
 }
-.cl2{
+
+.cl2 {
     font-size: 22px;
     font-weight: bold;
 }
 
-.ref5{
+.ref5 {
     padding-left: 60px;
     padding-right: 60px;
 }
-.ree{
+
+.ree {
     padding: 1%;
 }
 
 /* registration */
 
-.refmain{
+.refmain {
     border: gray solid;
     padding-right: 8%;
 }
-.displays{
+
+.displays {
     display: flex;
     padding: 2%;
 }
