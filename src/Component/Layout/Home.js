@@ -258,13 +258,13 @@ const Home = () => {
         {/* Achieve Digital Transformation  */}
         <div className='fontfamily hh7' >
 
-          <h1 className='t1'>Achieve Digital Transformation With Innovative Tech</h1>
+          <h4 className=''>Achieve Digital Transformation With Innovative Tech</h4>
 
           <div className='fontfamily ttt'>
             Being a significant part of the FinTech revolution, loan lending app development is enabled
-            by several technologies. However, the use of innovative technologies such as AI & ML,
+            by several technologies. However, the use of innovative technologies such as AI & ML,<br/>
             Blockchain, and Big Data is paving the way for a new future of lending, where the borrower
-            can request and directly receive the loan amount through mobile devices.
+            can request and directly receive the loan amount through mobile devices.<br/>
             So, let’s look at these technologies, leading lending software development to new heights:
           </div><br />
 
@@ -367,9 +367,9 @@ const Home = () => {
 
           <div className='fontfamily tt'>
             Many loan lending app development companies will overwhelm you by suggesting dozens of app features
-            that can be unnecessary for a loan lending platform.
+            that can be unnecessary for a loan lending platform.<br/>
             Worry not, we, at Nimble AppGenie as a leading p2p lending platform development company,
-            always suggest to our clients the right and appropriate set of features for your P2P lending platform development.
+            always suggest to our clients the right and appropriate set of <br/>features for your P2P lending platform development.
           </div><br/><br/>
 
           <div className='ull offset-4' >

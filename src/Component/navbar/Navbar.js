@@ -2,6 +2,7 @@ import React from 'react'
 import '../../../node_modules/bootstrap/dist/css/bootstrap.min.css'
 import '../../../node_modules/bootstrap/dist/js/bootstrap.min.js'
 import loanlogos from '../../accetss/abstract-mortgage-home-roof-with-bars-forming-arrow-9723ld.png'
+import '../CSS MODULE/navcss.css'
 
 const Navbar = () => {
   return (
@@ -57,14 +58,14 @@ const Navbar = () => {
               </button>
               <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
-                  <li class="nav-item">
+                  <li class="nav-item active">
                     <a class="nav-link active" aria-current="page" href="/">Home</a>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link" href="/solnav2">Solutions</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="/">Pricing</a>
+                    <a class="nav-link" href="/pricing">Pricing</a>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link disabled">Disabled</a>

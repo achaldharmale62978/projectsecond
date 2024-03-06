@@ -7,6 +7,13 @@
     width: auto;
 }
 
+.ttt {
+    text-align: center;
+    justify-content: center;
+    font-size: 18px;
+
+}
+
 .hh2 {
     background-color: black;
     font-size: 30px;
@@ -40,6 +47,7 @@
 
 .tt {
     font-weight: 600;
+    font-size: 18px;
 
 }
 
@@ -119,16 +127,17 @@
 
 }
 
-.hh13{
+.hh13 {
     background-color: rgb(190, 189, 189);
     padding: 30px;
 }
 
-.atag{
+.atag {
     text-decoration: none;
     color: black;
 
 }
-.atag:hover{
-    color:blue;
+
+.atag:hover {
+    color: blue;
 }

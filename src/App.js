@@ -22,6 +22,7 @@ import CibilDelete from './Component/OEmodule/CibilDelete';
 import Registration from './Component/REmodule/Registration';
 import REgupdate from './Component/REmodule/REgupdate';
 import REgdelete from './Component/REmodule/REgdelete';
+import Pricing from './Component/Layout/nav2/Pricing';
 
 
 
@@ -40,6 +41,7 @@ function App() {
           <Route path='/' element={<Home/>}/>
           <Route path='/home' element={<Home/>}/>
           <Route path='/solnav2' element={<Solnav2/>}/>
+          <Route path='/pricing' element={<Pricing/>}/>
 
           {/* login  */}
           <Route path='/login' element={<Login/>}/>
