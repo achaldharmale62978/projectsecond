@@ -25,25 +25,31 @@ const REgdelete = () => {
     }
     return (
         <>
-            <center className='relog fontfamily '>
-                <form onSubmit={() => (Delete())}>
-                    <div class="card col-8">
-                        <div class="card-header">
-                           <h5 className='ref text-center rel1'> Registration Data :</h5>
-                        </div>
-                        <div class="card-body rel2">
-                            <h5 class="card-title">Are you want to delete this data </h5>
-                            <br/><br/>
-                            <div>
-                                <input type='submit' value='Yes' className='btn btn-outline-secondary col-3 offset-1 btt' />
+            <center >
+                <div className='row justify-content-center mt-5'>
+                    <div className='col-lg-8 col-md-10 col-sm-12'>
+                        <form onSubmit={() => (Delete())}>
+                            <div class="card ">
+                                <div class="card-header text-center">
+                                    <div className='card-body'>
+                                        <h5 className='card-title text-center '> Registration Data :</h5>
+                                        <div class="card-body ">
+                                            <h5 class="card-title text-center">Are you want to delete this data </h5>
+                                            <br /><br />
+                                            <div className='d-flex justify-content-center '>
+                                                <input type='submit' value='Yes' className='btn btn-outline-secondary mx-2 btt' />
 
-                                <NavLink to={'/cmlist'}>
-                                    <button type='reset' className='btn btn-outline-secondary col-3 offset-1 btt'>Cancel</button>
-                                </NavLink>
+                                                <NavLink to={'/cmlist'}>
+                                                    <button type='reset' className='btn btn-outline-secondary mx-2 btt'>Cancel</button>
+                                                </NavLink>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                        </div>
+                        </form>
                     </div>
-                </form>
+                </div>
             </center>
         </>
     )

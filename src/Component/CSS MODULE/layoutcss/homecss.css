@@ -1,9 +1,10 @@
-.h1 {
+.head1 {
     background-image: url('../../../accetss/home/istockphoto-1390560381-170667a1.webp');
     background-repeat: no-repeat;
     background-size: cover;
     backface-visibility: hidden;
-    height: 600px;
+    height: 200%;
+    text-align: center;
     width: auto;
 }
 
@@ -16,7 +17,7 @@
 
 .hh2 {
     background-color: black;
-    font-size: 30px;
+    font-size: 24px;
     color: whitesmoke;
     text-align: center;
 
@@ -79,11 +80,15 @@
     background-color: gray;
 }
 
+.hh12{
+    padding: 20px;
+}
 .ul3:hover {
     color: white;
 
     background-color: rgb(5, 5, 5);
 }
+
 
 .box1 {
     border: solid;
@@ -120,16 +125,17 @@
 }
 
 .portfolio {
-    background-image: url('../../../accetss/home/1.png');
+    background-image: url('../../../accetss/home/images.jpg');
     background-size: cover;
     background-repeat: no-repeat;
-    height: 550px;
+   
+    /* padding: 60px 0;  */
 
-}
+  }
 
 .hh13 {
     background-color: rgb(190, 189, 189);
-    padding: 30px;
+    padding: 20px;
 }
 
 .atag {
@@ -141,3 +147,54 @@
 .atag:hover {
     color: blue;
 }
+.card-title {
+    font-weight: bold; 
+  }
+  
+  .card {
+    border: none; 
+  }
+  
+  .card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .card-text {
+    margin-bottom: 0; 
+  }
+  .fontfamily {
+    font-family: 'Arial', sans-serif; 
+  }
+  
+  .hh13 {
+    padding: 20px; 
+  }
+  
+  .atag {
+    text-decoration: none;
+    color: #000;
+  }
+  @media (max-width: 992px) {
+    .hh13 .col-lg-4 {
+      margin-bottom: 30px; /* Adjust spacing for smaller screens */
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .hh13 {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .col-lg-4 {
+      width: 100%;
+      text-align: center;
+      margin-bottom: 30px;
+    }
+  
+    .offset-lg-1 {
+      margin-left: 0;
+    }
+  }

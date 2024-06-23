@@ -5,15 +5,15 @@ import { NavLink, useNavigate, useParams } from 'react-router-dom'
 
 const REdelete = () => {
 
-  const [user,setuser]=useState({})
+  const [user, setuser] = useState({})
 
   const { userId } = useParams()
 
   const navigate = useNavigate()
 
   async function fetchdata() {
-    const result =await
-    axios.get(`http://localhost:7001/reenquery/get/${userId}`)
+    const result = await
+      axios.get(`http://localhost:7001/reenquery/get/${userId}`)
     setuser(result.data[0])
   }
 
@@ -29,21 +29,24 @@ const REdelete = () => {
   return (
     <>
       <center>
-        <div className='relog'>
-          <form onSubmit={()=>(Delete())}>
-            <div className='card col-8'>
-              <h4 className='card-header text-center rel1'> Regional Exicutive </h4>
-              <div className='card-body rel2'>
-                <h4 className='card-title text-center'>Are you want to Delete {user.id} this data</h4><br />
+        <div className='row justify-content-center mt-5'>
+          <div className=' col-lg-8 col-md-10 col-sm-12'>
+            <form onSubmit={() => (Delete())}>
+              <div className='card '>
+                <h4 className='card-header text-center '> Regional Exicutive </h4>
+                <div className='card-body '>
+                  <h4 className='card-title text-center'>Are you want to Delete {user.id} this data</h4><br />
+                  <div className='d-flex justify-content-center'>
+                    <input type='submit' value='yes' className='btn btn-outline-secondary mx-2 ' />
 
-                <input type='submit' value='yes' className='btn btn-outline-secondary col-3 offset-1'/> 
-
-                <NavLink to={'/relist'}>
-                  <button className='btn btn-outline-secondary col-3 offset-1' type='reset'>Cancel</button>
-                </NavLink>
+                    <NavLink to={'/relist'}>
+                      <button className='btn btn-outline-secondary mx-2' type='reset'>Cancel</button>
+                    </NavLink>
+                  </div>
+                </div>
               </div>
-            </div>
-          </form>
+            </form>
+          </div>
         </div>
       </center>
     </>

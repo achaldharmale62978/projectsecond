@@ -24,7 +24,9 @@
     background-image: url('https://t3.ftcdn.net/jpg/03/83/96/60/360_F_383966098_bvUOQFkUxJEGpq9BOZfDlStqtRa2t0AL.webp');
     background-size: cover;
     background-repeat: no-repeat;
-    padding-bottom: 115px;   
+    padding-bottom: 70%;   
+    height: auto;
+    width: auto;
 }
 .button{
     border-color: rgb(11, 11, 11);

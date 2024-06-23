@@ -26,15 +26,15 @@ const CibilStatus = () => {
     return (
         <>
             <div className='ref1 fontfamily '>
-                <div className='ref2'>
-                    <Repage />&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;
-                    <div className='ref6'>
+                <div className='row ref2'>
+                    <Repage />
+                    <div className='col-7 ref6'>
                         <div className=' ref3'>
                             <div className=' text-center  '>
                                 <h5 className='ref '> * Update Cibil Status*</h5><hr/>
                             </div><br />
-                            <div className=''>
-                                <table class=" table t1 border border-secondary">
+                            <div className='table-responsive'>
+                                <table class=" table table-striped  t1 border bordered">
                                     <thead>
                                         <tr>
                                             <th scope="col" class="table-secondary">Cibil Id</th>

@@ -24,13 +24,13 @@ const RElist = () => {
 
   return (
     <>
-      <div className='ref1 fontfamily'>
-        <div className='ref2'>
-          <Repage />&ensp;&ensp;
-          <div className='ref3 offset'>
+      <div className=' ref1 fontfamily'>
+        <div className='row ref2'>
+          <Repage />
+          <div className='col-12 ref3'>
             <h3 className='ref '>RE Enquery List</h3>
-            <div >
-              <table className="table t1 border border-secondary">
+            <div className="table-responsive">
+              <table className="table table-striped table-bordered">
                 <thead>
                   <tr>
                     <th scope="col" className="table-secondary">Id</th>
@@ -48,28 +48,25 @@ const RElist = () => {
                 </thead>
                 <tbody>
                   {
-                      user.map(use =>  {
+                    user.map(use => {
                       return (
-                        <>
-                          <tr key={use.id}>
-                            <th className="table-secondary">{use.id}</th>
-                            <td>{use.fname}</td>
-                            <td className="table-secondary">{use.lname}</td>
-                            <td>{use.phone}</td>
-                            <td className="table-secondary">{use.city}</td>
-                            <td>{use.email}</td>
-                            <td className="table-secondary">{use.add}</td>
-                            <td>{use.bday}</td>
-                            <td className="table-secondary">{use.gender}</td>
-                            <td>
-                              <NavLink to={`/reupdate/${use.id}`} className='btt'><GrUpdate /></NavLink>
-                            </td>
-                            <td className='table-secondary'>
-                              <NavLink to={`/redelete/${use.id}`} className='btt'><MdDelete  /> </NavLink>
-                            </td>
-                           
-                          </tr>
-                        </>
+                        <tr key={use.id}>
+                          <th className="table-secondary">{use.id}</th>
+                          <td>{use.fname}</td>
+                          <td className="table-secondary">{use.lname}</td>
+                          <td>{use.phone}</td>
+                          <td className="table-secondary">{use.city}</td>
+                          <td>{use.email}</td>
+                          <td className="table-secondary">{use.add}</td>
+                          <td>{use.bday}</td>
+                          <td className="table-secondary">{use.gender}</td>
+                          <td>
+                            <NavLink to={`/reupdate/${use.id}`} className='btt btn btn-link p-0'><GrUpdate /></NavLink>
+                          </td>
+                          <td className='table-secondary'>
+                            <NavLink to={`/redelete/${use.id}`} className='btt btn btn-link p-0'><MdDelete /></NavLink>
+                          </td>
+                        </tr>
                       )
                     })
                   }

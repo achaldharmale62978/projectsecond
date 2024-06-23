@@ -1,4 +1,4 @@
-body::before{
+/* body::before{
     content: "";
     position: absolute;
     inset: 40% -60% 0 -60%;
@@ -19,4 +19,4 @@ nav ul{
 
 nav.before .active-element{
     transform:rotateY('180deg');
-}
+} */

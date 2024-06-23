@@ -22,48 +22,53 @@ const Cibil = () => {
 
     return (
         <>
-            <div className='ref1 fontfamily '>
-                <div className='ref2 ree'>
-                    <Oepage />&ensp;&ensp;&ensp;&ensp;
-                    <div className='fm col-6 ref5'>
-                        <div className='ref3 fontfamily   ' >
-                            <div className='text-center  '>
-                                <h5 className='ref '> * Update Cibil *</h5><hr/>
-                            </div><br />
-                            <form onSubmit={handleSubmit(savedata)}>
-                                <div className='form-group   cl1'>
-                                    <label htmlFor='cid ' className=' cl2 col-3' >Cibil ID : </label>
-                                    <input type='number' id='cid' className='form-control ' {...register('cid')}/>
-                                </div><br /><br />
-
-                                <div className='form-group   cl1'>
-                                    <label htmlFor='cscore ' className=' cl2 col-3' >Cibil Score: </label>
-                                    <input type='text' id='cscore' className='form-control ' {...register('cscore')}/>
-                                </div><br /><br />
-
-                                <div className='form-group   cl1'>
-                                    <label htmlFor='cdate ' className=' cl2 col-3' >Cibil Date : </label>
-                                    <input type='date' id='cdate' className='form-control ' {...register('cdate')}/>
-                                </div><br /><br />
-
-                                <div className='form-group   cl1'>
-                                    <label htmlFor='status ' className=' cl2 col-3' >Status : </label>
-                                    <input type='text' id='status' className='form-control ' {...register('status')}/>
-                                </div><br /><br />
-
-                                <div className='form-group   cl1'>
-                                    <label htmlFor='remark ' className=' cl2 col-3' > Remark : </label>
-                                    <input type='text' id='remark' className='form-control  ' {...register('remark')}/>
-                                </div><br /><br />
-
-                                <div className='form-group   cl1'>
-                                    <button type='submit' className='btn btn-outline-success col-4 offset-1'>Submit</button>
-                                    <button type='reset' className='btn btn-outline-danger col-4 offset-1 '>Reset</button>
-                                </div><br /><br />
-
-
-                            </form>
+            <div className='ref1'>
+                <div className='row justify-content-center'>
+                    <div className='col-8 col-md-6 mt-5'>
+                        <div className='text-center'>
+                            <h5>* Update Cibil *</h5>
+                            <hr />
                         </div>
+                        <form onSubmit={handleSubmit(savedata)}>
+                            <div className='form-group row'>
+                                <label htmlFor='cid' className='col-12 col-md-3 col-form-label cl2'>Cibil ID:</label>
+                                <div className='col-12 col-md-9'>
+                                    <input type='number' id='cid' className='form-control' {...register('cid')} />
+                                </div>
+                            </div><br/>
+                            <div className='form-group row'>
+                                <label htmlFor='cscore' className='col-12 col-md-3 col-form-label cl2'>Cibil Score:</label>
+                                <div className='col-12 col-md-9'>
+                                    <input type='text' id='cscore' className='form-control' {...register('cscore')} />
+                                </div>
+                            </div><br/>
+                            <div className='form-group row'>
+                                <label htmlFor='cdate' className='col-12 col-md-3 col-form-label cl2'>Cibil Date:</label>
+                                <div className='col-12 col-md-9'>
+                                    <input type='date' id='cdate' className='form-control' {...register('cdate')} />
+                                </div>
+                            </div><br/>
+                            <div className='form-group row'>
+                                <label htmlFor='status' className='col-12 col-md-3 col-form-label cl2'>Status:</label>
+                                <div className='col-12 col-md-9'>
+                                    <input type='text' id='status' className='form-control' {...register('status')} />
+                                </div>
+                            </div><br/>
+                            <div className='form-group row'>
+                                <label htmlFor='remark' className='col-12 col-md-3 col-form-label cl2'>Remark:</label>
+                                <div className='col-12 col-md-9'>
+                                    <input type='text' id='remark' className='form-control' {...register('remark')} />
+                                </div>
+                            </div><br/><br/>
+                            <div className='form-group row'>
+                                <div className='col-12 col-md-6'>
+                                    <button type='submit' className='btn btn-outline-success w-100'>Submit</button>
+                                </div>
+                                <div className='col-12 col-md-6'>
+                                    <button type='reset' className='btn btn-outline-danger w-100'>Reset</button>
+                                </div>
+                            </div>
+                        </form>
                     </div>
                 </div>
             </div>

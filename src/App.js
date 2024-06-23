@@ -24,57 +24,74 @@ import REgupdate from './Component/REmodule/REgupdate';
 import REgdelete from './Component/REmodule/REgdelete';
 import Pricing from './Component/Layout/nav2/Pricing';
 
-
+import { useMediaQuery } from 'react-responsive';
 
 function App() {
-  return (
 
+  const isDesktopOrLaptop = useMediaQuery({
+    query: '(min-width: 1224px)'
+  })
+  const isBigScreen = useMediaQuery({ query: '(min-width: 1824px)' })
+  const isTabletOrMobile = useMediaQuery({ query: '(max-width: 1224px)' })
+  const isPortrait = useMediaQuery({ query: '(orientation: portrait)' })
+  const isRetina = useMediaQuery({ query: '(min-resolution: 2dppx)' })
+
+
+  return (
     // git repository https://github.com/achaldharmale62978/projectsecond
     // repository name projectsecond
 
-    
+
     <div className="App">
+      {isDesktopOrLaptop}
+      {isBigScreen }
+      {isTabletOrMobile}
+      {isPortrait } 
+      {isRetina }
+
       <BrowserRouter>
         <Routes>
 
           {/* LAYOUT */}
-          <Route path='/' element={<Home/>}/>
-          <Route path='/home' element={<Home/>}/>
-          <Route path='/solnav2' element={<Solnav2/>}/>
-          <Route path='/pricing' element={<Pricing/>}/>
+          <Route path='/' element={<Home />} />
+          <Route path='/home' element={<Home />} />
+          <Route path='/solnav2' element={<Solnav2 />} />
+          <Route path='/pricing' element={<Pricing />} />
+
+
 
           {/* login  */}
-          <Route path='/login' element={<Login/>}/>
+          <Route path='/login' element={<Login />} />
 
           {/* RE MODULE */}
-          <Route path='/repage' element={<Repage/>}/>
-          <Route path='/reenqueryform' element={<REenqueryform/>}/>
-          <Route path='/relist' element={<RElist/>}/>
-          <Route path='/reupdate/:userId' element={<REupdate/>}/>
-          <Route path='/relogout' element={<RElogout/>}/>
-          <Route path='/redelete/:userId' element={<REdelete/>}/>
+          <Route path='/repage' element={<Repage />} />
+          <Route path='/reenqueryform' element={<REenqueryform />} />
+          <Route path='/relist' element={<RElist />} />
+          <Route path='/reupdate/:userId' element={<REupdate />} />
+          <Route path='/relogout' element={<RElogout />} />
+          <Route path='/redelete/:userId' element={<REdelete />} />
 
-          <Route path='/cibilstatus' element={<CibilStatus/>}/>
-          <Route path='/cibildelete/:cibilId' element={<CibilDelete/>}/>
+          <Route path='/cibilstatus' element={<CibilStatus />} />
+          <Route path='/cibildelete/:cibilId' element={<CibilDelete />} />
 
-          <Route path='/register' element={<Registration/>}/>
-          <Route path='/regupdate/:regId' element={<REgupdate/>}/>
-          <Route path='/regdelete/:regId' element={<REgdelete/>}/>
+          <Route path='/register' element={<Registration />} />
+          <Route path='/regupdate/:regId' element={<REgupdate />} />
+          <Route path='/regdelete/:regId' element={<REgdelete />} />
 
           {/* OE MODULE */}
-          <Route path='/oepage' element={<Oepage/>}/>
-          <Route path='/oelist' element={<OElist/>}/>
-          <Route path='/oelogout' element={<Oelogout/>}/>
-          <Route path='/cibilreg' element={<Cibil/>}/>
-         
+          <Route path='/oepage' element={<Oepage />} />
+          <Route path='/oelist' element={<OElist />} />
+          <Route path='/oelogout' element={<Oelogout />} />
+          <Route path='/cibilreg' element={<Cibil />} />
+
 
           {/* CM MODULE */}
-          <Route path='/cmpage' element={<Cmpage/>}/>
-          <Route path='/cmlist' element={<Cmlist/>}/>
-          <Route path='/cmlogout' element={<Cmlogout/>}/>
+          <Route path='/cmpage' element={<Cmpage />} />
+          <Route path='/cmlist' element={<Cmlist />} />
+          <Route path='/cmlogout' element={<Cmlogout />} />
 
-          
-          
+
+
         </Routes>
       </BrowserRouter>
     </div>

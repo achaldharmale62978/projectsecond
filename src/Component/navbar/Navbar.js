@@ -7,74 +7,69 @@ import '../CSS MODULE/navcss.css'
 const Navbar = () => {
   return (
     <>
-      <div className='n1'>
-        <div className='n2'>
-          <nav class="navbar navbar-expand-lg navbar-light bg-light ">
-            <div class="container-fluid">
-              <a class="navbar-brand" href="/">
-                <img src={loanlogos} alt='' height='50' width='200' />
-              </a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="/navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse nav justify-content-end" id="navbarSupportedContent" >
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0  " style={{ paddingLeft: "600px", fontSize: "19px", fontFamily: "serif" }} >
-                  <li class="nav-item">
-                    <a class="nav-link active nn1" aria-current="page" href="/company">Company </a>
+      <header>
+        {/* <!-- Add this to your public/index.html in the head section --> */}
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"/>
+          <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+          <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
 
-                  </li>
-
-                  <li class="nav-item">
-                    <a class="nav-link active nn1" aria-current="page" href="/solnav2">Solutions</a>
-                  </li>
-
-                  <li class="nav-item">
-                    <a class="nav-link active nn1" aria-current="page" href="/">Services</a>
-                  </li>
-
-                  <li class="nav-item">
-                    <a class="nav-link active nn1" aria-current="page" href="/">Hire Devlopers</a>
-                  </li>&ensp;
-
-                  <ul class="nav justify-content-end  logn"   >
-                    <li className="  logn" style={{ color: "white " }}  >
-                      <a className="nav-link active btn btn-outline-secondary  logn" aria-current="page" href="/login" style={{ color: "white" }}>Log IN</a>
-                    </li>
-                  </ul>
-                </ul>
-
-
-              </div>
+      </header>
+      <div className=''>
+        {/* Navigation Bar */}
+        <nav className="navbar navbar-expand-lg navbar-light bg-light " style={{maxWidth:''}}>
+          <div className="container-fluid">
+            <a className="navbar-brand" href="/">
+              <img src={loanlogos} alt='' height='50' width='200' />
+            </a>
+            <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span className="navbar-toggler-icon"></span>
+            </button>
+            <div className="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul className="navbar-nav ms-auto mb-2 mb-lg-0" style={{ fontSize: "19px", fontFamily: "serif" }}>
+                <li className="nav-item">
+                  <a className="nav-link active nn1" aria-current="page" href="/company">Company</a>
+                </li>
+                <li className="nav-item">
+                  <a className="nav-link active nn1" aria-current="page" href="/solnav2">Solutions</a>
+                </li>
+                <li className="nav-item">
+                  <a className="nav-link active nn1" aria-current="page" href="/">Services</a>
+                </li>
+                <li className="nav-item">
+                  <a className="nav-link active nn1" aria-current="page" href="/">Hire Developers</a>
+                </li> &ensp;&ensp;&ensp;&ensp;&ensp;
+                <li className="nav-item">
+                  <a className="nav-link active btn btn-outline-secondary logn" aria-current="page" href="/login" style={{ color: "white" }}>Log IN</a>
+                </li>
+              </ul>
             </div>
-          </nav>
-        </div>
+          </div>
+        </nav>
 
-        <div className='n3'>
-          <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <div class="container-fluid">
-              <a class="navbar-brand" href="/"></a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="/navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                  <li class="nav-item active">
-                    <a class="nav-link active" aria-current="page" href="/">Home</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="/solnav2">Solutions</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="/pricing">Pricing</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link disabled">Disabled</a>
-                  </li>
-                </ul>
-              </div>
+        {/* Secondary Navigation Bar */}
+        <nav className="navbar navbar-expand-lg navbar-light bg-light">
+          <div className="container-fluid">
+            <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span className="navbar-toggler-icon"></span>
+            </button>
+            <div className="collapse navbar-collapse" id="navbarNav">
+              <ul className="navbar-nav">
+                <li className="nav-item">
+                  <a className="nav-link active" aria-current="page" href="/">Home</a>
+                </li>
+                <li className="nav-item">
+                  <a className="nav-link" href="/solnav2">Solutions</a>
+                </li>
+                <li className="nav-item">
+                  <a className="nav-link" href="/pricing">Pricing</a>
+                </li>
+                <li className="nav-item">
+                  <a className="nav-link disabled" aria-disabled="true">Disabled</a>
+                </li>
+              </ul>
             </div>
-          </nav>
-        </div>
+          </div>
+        </nav>
       </div>
     </>
   )
