@@ -754,7 +754,7 @@ const Home = () => {
 
         {/* loan leading app */}
         <div className='fontfamily hh12'>
-
+          
           <div style={{ paddingTop: '20px' }}>
             <i><h3 className='hh2 fontfamily col-4 offset-4' >
               <marquee behavior="alternate" gap="0" truespeed="" direction="left" scrollamount="2" scrolldelay="20" loop="true">
