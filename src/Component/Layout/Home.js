@@ -177,7 +177,7 @@ const Home = () => {
                         If you’re one of the companies that bring investors and borrowers together,
                         Nimble AppGenie, a leading P2P lending platform development company,
                         is the right choice for your P2P lending software development.
-                      </p>
+                      </p><br/>
                     </div>
                   </div>
                 </div>
@@ -204,14 +204,15 @@ const Home = () => {
                   <div className="card">
                     <div className="card-body">
                       <h5 className="card-title">Credit Union Loan App &ensp;
-                        <img src={img6} style={{ backgroundColor: 'rgb(8, 13, 54)', padding: '5px' }} />
+                        <img src={img6} style={{ backgroundColor: 'rgb(8, 13, 54)', padding: '7px' }} />
                       </h5>
                       <p className="card-text">
                         Loan lending apps for credit unions are very similar to bank lending apps.
                         Credit union lending apps also require forums and in-app chat features to allow union members to connect.
                         We understand the right set of features that a credit union loan app will need.
                         That’s why we filled our loan app development solutions with the right features.
-                      </p>
+                        .
+                      </p><br/><br/>
                     </div>
                   </div>
                 </div>
@@ -228,7 +229,7 @@ const Home = () => {
                         it is compulsory to build solutions that are end-to-end encrypted and follow the highest security standards.
                         As your user base grows, your lending software development solution will have to accommodate all of these users,
                         which requires the app to be developed with high scalability constantly in consideration.
-                        Worry not, we’ll do this for you.
+                        
                       </p>
                     </div>
                   </div>
@@ -265,7 +266,7 @@ const Home = () => {
                         one of our most renowned services is for custom loan lending app development.
                         Our team of dedicated mobile app developers has the required experience and technical
                         know-how needed to deliver market-leading money-lending software solutions.
-                      </p>
+                      </p><br/>
                     </div>
                   </div>
                 </div>
@@ -436,7 +437,7 @@ const Home = () => {
                           <img className='mt-2' data-src='' alt='image' width='50' height='50' src={box1_3} />
                         </figure>
                         <h3>Payment Log</h3>
-                        <p>Once a loan has been funded, the customer would want to know all the completed and pending payments. Knowing the total remaining debt at a glance is also better.</p>
+                        <p className='mb-5'>Once a loan has been funded, the customer would want to know all the completed and pending payments. Knowing the total remaining debt at a glance is also better.</p>
                       </div>
                     </div>
                   </div>
@@ -447,7 +448,7 @@ const Home = () => {
                           <img className='mt-2' data-src='' alt='image' width='50' height='50' src={box1_4} />
                         </figure>
                         <h3>Personalized Alerts</h3>
-                        <p>When users have dozens of applications on their mobile phones, they won’t pay attention to every notification. Hence, you should shoot the least possible notifications to make them valuable.</p>
+                        <p className='mb-4'>When users have dozens of applications on their mobile phones, they won’t pay attention to every notification. Hence, you should shoot the least possible notifications to make them valuable.</p>
                       </div>
                     </div>
                   </div>
@@ -847,7 +848,7 @@ const Home = () => {
                 </div>
               </div>
 
-              <div className='col-lg-6 offset-lg-3'>
+              <div className='col-lg-6 offset-lg-3 '>
                 <div className='card mb-3'>
                   <div className='row g-0'>
                     <div className='col-md-4 mt-3'>

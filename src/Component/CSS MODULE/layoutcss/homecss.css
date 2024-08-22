@@ -199,3 +199,9 @@
       margin-left: 0;
     }
   }
+  .borderbox{
+    border-color: #000;
+    border-width: solid;
+    box-shadow: '2px 2px 3px 3px',
+     
+  }
