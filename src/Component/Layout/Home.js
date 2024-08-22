@@ -2,6 +2,8 @@ import React from 'react'
 import Navbar from '../navbar/Navbar'
 import '../CSS MODULE/layoutcss/homecss.css'
 import img1 from '../../accetss/home/ourservice-img012.webp'
+import img2 from '../../accetss/home/download.jpg'
+import img1_1 from '../../accetss/home/images.jpg'
 // import hi1 from '../../assetss/home/achal dd.png'
 // import hi2 from '../../assetss/home/3.png'
 import img3 from '../../accetss/home/BL26_Think_rupee_notes coines.webp'
@@ -91,31 +93,33 @@ const Home = () => {
               <div className="card" style={{ width: "100%", padding: '10px' }}>
                 <img src={img1} className="card-img-top" alt="..." />
                 <div className="card-body">
-                  <h5 className="card-title">Card title</h5>
+                  <h5 className="card-title me-0">Card title</h5>
                   <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  <a href="#" className="btn btn-primary">Go somewhere</a>
+                  <br />&ensp;&ensp;&ensp;
+                  <a href="/" className="btn btn-primary">Go somewhere</a>
                 </div>
               </div>
             </div>
 
             <div className="col-12 col-md-4 my-3">
               <div className="card" style={{ width: "100%", padding: '10px' }}>
-                <img src={img1} className="card-img-top" alt="..." />
+                <img src={img2} className="card-img-top" alt="..." />
                 <div className="card-body">
                   <h5 className="card-title">Card title</h5>
                   <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  <a href="#" className="btn btn-primary">Go somewhere</a>
+                  <a href="/" className="btn btn-primary">Go somewhere</a>
                 </div>
               </div>
             </div>
 
             <div className="col-12 col-md-4 my-3">
               <div className="card" style={{ width: "100%", padding: '10px' }}>
-                <img src={img1} className="card-img-top" alt="..." />
+                <img src={img1_1} className="card-img-top" alt="..." />
                 <div className="card-body">
                   <h5 className="card-title">Card title</h5>
                   <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  <a href="#" className="btn btn-primary">Go somewhere</a>
+                  <br />&ensp;&ensp;&ensp;
+                  <a href="/" className="btn btn-primary">Go somewhere</a>
                 </div>
               </div>
             </div>
@@ -272,7 +276,7 @@ const Home = () => {
 
         <div>
           {/* Achieve Digital Transformation */}
-          <div className='fontfamily hh7'>
+          <div className='fontfamily hh7 mt-5'>
 
             <h4 className='text-center'>Achieve Digital Transformation With Innovative Tech</h4>
 
@@ -292,7 +296,7 @@ const Home = () => {
                       <div style={{ border: 'solid', boxSizing: 'border-box' }}>
                         <h5 className="card-title" style={{ padding: '10px' }}> <b>Open Banking</b> </h5>
                         <p className="card-text" style={{ padding: '10px' }}>
-                          <span  style={{ color: 'blue' }}><RiCheckDoubleLine /></span>
+                          <span style={{ color: 'blue' }}><RiCheckDoubleLine /></span>
                           Gone are the days when third-party lenders had to contact banks or credit institutions to access customers’
                           financial data and credit scores. By integrating the open banking APIs,
                           we’ll empower your loan lending app to access an individual's financial data in seconds.
@@ -364,7 +368,7 @@ const Home = () => {
         </div>
 
         {/* loan lending features */}
-        <div className='fontfamily hh8' style={{ backgroundColor: 'rgb(222, 226, 221)' }}>
+        <div className='fontfamily ms-5' style={{ backgroundColor: 'rgb(222, 226, 221)', width: '90%' }}>
           <div style={{ paddingTop: '20px' }}>
             <i>
               <h3 className='hh2 fontfamily col-12 text-center'>
@@ -387,13 +391,13 @@ const Home = () => {
           <div className='ull text-center'>
             <ul className='nav nav-pills mb-3 justify-content-center' id='pills-tab' role='tablist'>
               <li className='nav-item border border-light-rounded' role='presentation'>
-                <button className='nav-ul1 btn btn-outline-light' id='pills-home-tab' data-bs-toggle='pill' data-bs-target='#pills-home' type='button' role='tab' aria-controls='pills-home' aria-selected='true' style={{ fontSize: '20px' }}>Basic Features</button>
+                <button className='nav-ul1 btn btn-outline-light' id='pills-home-tab' data-bs-toggle='pill' data-bs-target='/pills-home' type='button' role='tab' aria-controls='pills-home' aria-selected='true' style={{ fontSize: '20px' }}>Basic Features</button>
               </li>
               <li className='nav-item border border-secondary-rounded' role='presentation'>
-                <button className='nav-ul2 btn btn-outline-secondary' id='pills-profile-tab' data-bs-toggle='pill' data-bs-target='#pills-profile' type='button' role='tab' aria-controls='pills-profile' aria-selected='false' fdprocessedid='50y21' style={{ fontSize: '20px' }}>Advance Features</button>
+                <button className='nav-ul2 btn btn-outline-secondary' id='pills-profile-tab' data-bs-toggle='pill' data-bs-target='/pills-profile' type='button' role='tab' aria-controls='pills-profile' aria-selected='false' fdprocessedid='50y21' style={{ fontSize: '20px' }}>Advance Features</button>
               </li>
               <li className='nav-item border border-dark-rounded' role='presentation'>
-                <button className='nav-ul3 btn btn-outline-dark' id='pills-contact-tab' data-bs-toggle='pill' data-bs-target='#pills-contact' type='button' role='tab' aria-controls='pills-contact' aria-selected='false' fdprocessedid='2r0ho8' style={{ fontSize: '20px' }}>Security Procedure</button>
+                <button className='nav-ul3 btn btn-outline-dark' id='pills-contact-tab' data-bs-toggle='pill' data-bs-target='/pills-contact' type='button' role='tab' aria-controls='pills-contact' aria-selected='false' fdprocessedid='2r0ho8' style={{ fontSize: '20px' }}>Security Procedure</button>
               </li>
             </ul>
           </div>
@@ -597,86 +601,82 @@ const Home = () => {
             Some more reasons to choose Nimble as your next development partner are, as mentioned below:
           </p>
           {/* box 4  */}
-          <div>
-            <div className='offset-1 col-12'>
-              <div className='row 1.1 '>
 
-                <div className='col-lg-3  box1' >
-                  <div className='development-box'><br />
-                    <figure>
-                      <img className='' data-src='' alt='image' width='50' height='50'
-                        src={box4_1} />
-                    </figure>
-                    <h3>Tech stack</h3>
-                    <p>Tech stack refers to the technologies used in loan app development. MEAN Stack Development is a popular example.
-                      Depending on which of these you choose, the cost can be different.</p>
-                  </div>
-                </div>&ensp;&ensp;&ensp;&ensp;
-                <div className='col-lg-3 box1'>
-                  <div className='developmenet-box'><br />
-                    <figure>
-                      <img className='' data-src='' alt='image' width='50' height='50'
-                        src={box4_2} />
-                    </figure>
-                    <h3>App Platform</h3>
-                    <p>Android and iOS app development services are two popular choices when it comes to the platform. Plus, you also have an option of cross-platform mobile app development.
-                      The cost of each is different.</p>
-                  </div>
-                </div>&ensp;&ensp;&ensp;&ensp;
-                <div className='col-lg-3 box1'>
-                  <div className='developmenet-box'><br />
-                    <figure>
-                      <img className='' data-src='' alt='image' width='50' height='50'
-                        src={box4_3} />
-                    </figure>
-                    <h3>Testing Process</h3>
-                    <p>The testing process is just as important as the development itself. Moreover, the tools used for testing are often highly expensive.
-                      This is how the testing process can affect the lending software development cost.</p>
-                  </div>
-                </div>
-              </div><br />
-              <div className='row 1.2'>
-                <div className='col-lg-3  box1'>
-                  <div className='developmenet-box'><br />
-                    <figure>
-                      <img className='' data-src='' alt='image' width='50' height='50'
-                        src={box4_4} />
-                    </figure>
-                    <h3>App Hosting</h3>
-                    <p>After the app is developed, it has be to hosted somewhere. Depending on the type of hosting you choose, the cost of the same can be different.
-                      This adds to the total mobile loan app development cost.</p>
-                  </div>
-                </div>&ensp;&ensp;&ensp;&ensp;
-                <div className='col-lg-3  box1'>
-                  <div className='developmenet-box'><br />
-                    <figure>
-                      <img className='' data-src='' alt='image' width='50' height='50'
-                        src={box4_5} />
-                    </figure>
-                    <h3>Type of App</h3>
-                    <p>When it comes to loan lending app development, there are a few different types.
-                      Based on which one you are getting, the loan lending app development cost can be different.</p>
-                  </div>
-                </div>&ensp;&ensp;&ensp;&ensp;
-                <div className='col-lg-3  box1'>
-                  <div className='developmenet-box'><br />
-                    <figure>
-                      <img className='' data-src='' alt='image' width='50' height='50'
-                        src={box4_6} />
-                    </figure>
-                    <h3>Design & Features</h3>
-                    <p>Design and features are two points that are the selling force of the app.
-                      And whether you are looking for a simple design and feature or a complex one, can affect the cost of app development.</p>
-                  </div>
-                </div>
+          <div className='row 1.1 offset-1 col-10'>
+            <div className='col-lg-3  box1' >
+              <div className='development-box'><br />
+                <figure>
+                  <img className='' data-src='' alt='image' width='50' height='50'
+                    src={box4_1} />
+                </figure>
+                <h3>Tech stack</h3>
+                <p >Tech stack refers to the technologies used in loan app development. MEAN Stack Development is a popular example.
+                  Depending on which of these you choose, the cost can be different.</p>
+              </div>
+            </div>&ensp;&ensp;&ensp;&ensp;
+            <div className='col-lg-3 box1'>
+              <div className='developmenet-box'><br />
+                <figure>
+                  <img className='' data-src='' alt='image' width='50' height='50'
+                    src={box4_2} />
+                </figure>
+                <h3>App Platform</h3>
+                <p>Android and iOS app development services are two popular choices when it comes to the platform. Plus, you also have an option of cross-platform mobile app development.
+                  The cost of each is different.</p>
+              </div>
+            </div>&ensp;&ensp;&ensp;&ensp;
+            <div className='col-lg-3 box1'>
+              <div className='developmenet-box'><br />
+                <figure>
+                  <img className='' data-src='' alt='image' width='50' height='50'
+                    src={box4_3} />
+                </figure>
+                <h3>Testing Process</h3>
+                <p>The testing process is just as important as the development itself. Moreover, the tools used for testing are often highly expensive.
+                  This is how the testing process can affect the lending software development cost.</p>
               </div>
             </div>
           </div><br />
-
+          <div className='row 1.2 offset-1 col-10'>
+            <div className='col-lg-3  box1'>
+              <div className='developmenet-box'><br />
+                <figure>
+                  <img className='' data-src='' alt='image' width='50' height='50'
+                    src={box4_4} />
+                </figure>
+                <h3>App Hosting</h3>
+                <p>After the app is developed, it has be to hosted somewhere. Depending on the type of hosting you choose, the cost of the same can be different.
+                  This adds to the total mobile loan app development cost.</p>
+              </div>
+            </div>&ensp;&ensp;&ensp;&ensp;
+            <div className='col-lg-3  box1'>
+              <div className='developmenet-box'><br />
+                <figure>
+                  <img className='' data-src='' alt='image' width='50' height='50'
+                    src={box4_5} />
+                </figure>
+                <h3>Type of App</h3>
+                <p>When it comes to loan lending app development, there are a few different types.
+                  Based on which one you are getting, the loan lending app development cost can be different.</p>
+              </div>
+            </div>&ensp;&ensp;&ensp;&ensp;
+            <div className='col-lg-3  box1' >
+              <div className='developmenet-box'><br />
+                <figure>
+                  <img className='' data-src='' alt='image' width='50' height='50'
+                    src={box4_6} />
+                </figure>
+                <h3>Design & Features</h3>
+                <p>Design and features are two points that are the selling force of the app.
+                  And whether you are looking for a simple design and feature or a complex one, can affect the cost of app development.</p>
+              </div>
+            </div>
+          </div>
+          <br />
         </div><br />
 
         {/* our solutions */}
-        <div className='hh10 fontfamily'>
+        <div className='hh10 fontfamily ms-5' >
           <div className='container'>
             <div className='row justify-content-center' style={{ padding: '60px' }}>
               <div className='col-lg-4 col-md-6 mb-4'>
@@ -735,10 +735,10 @@ const Home = () => {
               </div>
             </div>
           </div>
-        </div><br/>
+        </div><br />
 
         {/* portfolio */}
-        <div className='hh11 fontfamily'>
+        <div className='hh11 fontfamily ms-5' style={{ width: '90%' }}>
           <div className='portfolio '>
             <div className='protfoliocolor' style={{ paddingTop: 'px', paddingBottom: '', textAlign: 'center' }}>
               <h2 className='' style={{ fontSize: '3.125rem', fontWeight: 'bold' }}>Our Portfolio</h2>
@@ -754,7 +754,7 @@ const Home = () => {
 
         {/* loan leading app */}
         <div className='fontfamily hh12'>
-          
+
           <div style={{ paddingTop: '20px' }}>
             <i><h3 className='hh2 fontfamily col-4 offset-4' >
               <marquee behavior="alternate" gap="0" truespeed="" direction="left" scrollamount="2" scrolldelay="20" loop="true">

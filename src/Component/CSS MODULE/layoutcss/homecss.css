@@ -94,11 +94,12 @@
     border: solid;
     border-width: thin;
     background-color: white;
-
+   
 }
 
 .hh10 {
     background-color: rgb(216, 215, 215);
+    width: 90%;
 }
 
 .card1cc {
