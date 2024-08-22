@@ -603,7 +603,7 @@ const Home = () => {
           {/* box 4  */}
 
           <div className='row 1.1 offset-1 col-10'>
-            <div className='col-lg-3  box1' >
+            <div className='col-lg-3 ms-5 box1' >
               <div className='development-box'><br />
                 <figure>
                   <img className='' data-src='' alt='image' width='50' height='50'
@@ -613,8 +613,8 @@ const Home = () => {
                 <p >Tech stack refers to the technologies used in loan app development. MEAN Stack Development is a popular example.
                   Depending on which of these you choose, the cost can be different.</p>
               </div>
-            </div>&ensp;&ensp;&ensp;&ensp;
-            <div className='col-lg-3 box1'>
+            </div>
+            <div className='col-lg-3 ms-5 box1'>
               <div className='developmenet-box'><br />
                 <figure>
                   <img className='' data-src='' alt='image' width='50' height='50'
@@ -624,8 +624,8 @@ const Home = () => {
                 <p>Android and iOS app development services are two popular choices when it comes to the platform. Plus, you also have an option of cross-platform mobile app development.
                   The cost of each is different.</p>
               </div>
-            </div>&ensp;&ensp;&ensp;&ensp;
-            <div className='col-lg-3 box1'>
+            </div>
+            <div className='col-lg-3 ms-5 box1'>
               <div className='developmenet-box'><br />
                 <figure>
                   <img className='' data-src='' alt='image' width='50' height='50'
@@ -638,7 +638,7 @@ const Home = () => {
             </div>
           </div><br />
           <div className='row 1.2 offset-1 col-10'>
-            <div className='col-lg-3  box1'>
+            <div className='col-lg-3 ms-5 box1'>
               <div className='developmenet-box'><br />
                 <figure>
                   <img className='' data-src='' alt='image' width='50' height='50'
@@ -648,8 +648,8 @@ const Home = () => {
                 <p>After the app is developed, it has be to hosted somewhere. Depending on the type of hosting you choose, the cost of the same can be different.
                   This adds to the total mobile loan app development cost.</p>
               </div>
-            </div>&ensp;&ensp;&ensp;&ensp;
-            <div className='col-lg-3  box1'>
+            </div>
+            <div className='col-lg-3 ms-5 box1'>
               <div className='developmenet-box'><br />
                 <figure>
                   <img className='' data-src='' alt='image' width='50' height='50'
@@ -659,8 +659,8 @@ const Home = () => {
                 <p>When it comes to loan lending app development, there are a few different types.
                   Based on which one you are getting, the loan lending app development cost can be different.</p>
               </div>
-            </div>&ensp;&ensp;&ensp;&ensp;
-            <div className='col-lg-3  box1' >
+            </div>
+            <div className='col-lg-3 ms-5 box1' >
               <div className='developmenet-box'><br />
                 <figure>
                   <img className='' data-src='' alt='image' width='50' height='50'
